@@ -1,0 +1,1 @@
+D:\FINKI\dianss>osmfilter map.osm --keep=craft=winery --keep=name='*' | osmconvert64.exe - --all-to-nodes --csv="@id @lon @lat name" --csv-separator="," -o="Vinarii.csv"
