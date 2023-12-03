@@ -11,8 +11,8 @@
     <groupId>com.example</groupId>
     <artifactId>wineries</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pharmacies</name>
-    <description>pharmacies</description>
+    <name>wineries</name>
+    <description>wineries</description>
     <properties>
         <java.version>17</java.version>
     </properties>

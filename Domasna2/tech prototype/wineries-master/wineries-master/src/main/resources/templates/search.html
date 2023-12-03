@@ -14,7 +14,7 @@
             <div class="container-fluid d-flex justify-content-around">
                 <a class="navbar-brand fw-bold fs-3" href="/">
                     <img th:src="@{/images/logo.png}" alt="" width="50" height="50">
-                    PharMap
+                    WineGuideMK
                 </a>
                 <div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                                 <a class="nav-link text-danger active" href="/register">SignUp</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-warning text-white fw-bold" href="/add">AddPharmacy</a>
+                                <a class="nav-link btn btn-warning text-white fw-bold" href="/add">AddWinery</a>
                             </li>
                         </ul>
                     </div>
@@ -72,7 +72,7 @@
                 var marker = L.marker([list[i]['lon'], list[i]['lat']]).addTo(map);
 
                 marker.bindPopup(`
-                    <b>Име на аптека: ${list[i]['name']}</b>
+                    <b>Име на винарија: ${list[i]['name']}</b>
                     <br>
                     <b>Град: ${list[i]['city']}</b>
                     <br>
