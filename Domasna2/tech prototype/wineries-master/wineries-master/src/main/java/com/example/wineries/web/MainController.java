@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/")
-public class MainController {
+public class   MainController {
     private final WineryService wineryService;
 
     public MainController(WineryService wineryService) {
