@@ -51,8 +51,8 @@ public class WineryServiceImpl implements WineryService {
     }
 
     @Override
-    public void saveWinery(Winery pharmacy) {
-        wineryRepository.save(pharmacy);
+    public void saveWinery(Winery winery) {
+        wineryRepository.save(winery);
     }
 
     @Override

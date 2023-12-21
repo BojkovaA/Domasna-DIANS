@@ -47,7 +47,7 @@ public class   MainController {
     }
 
     @PostMapping("/add")
-    public String addPharmacy(Model model,
+    public String addWinery(Model model,
                               @RequestParam String name,
                               @RequestParam String location,
                               @RequestParam Double lon,
