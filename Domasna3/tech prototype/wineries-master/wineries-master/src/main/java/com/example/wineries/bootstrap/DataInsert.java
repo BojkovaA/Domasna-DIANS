@@ -22,10 +22,9 @@ public class DataInsert {
 
 
         if (wineryRepository.count() == 0) {
-            wineries.add(new Winery("Chateau Sopot",22.0048024,41.436124,"Skopje"));
-            wineries.add(new Winery("Chateau Sopot",22.0048024,41.436124,"Veles"));
-            wineries.add(new Winery("Chateau Sopot",22.0048024,41.436124,"Negotino"));
-            wineries.add(new Winery("Chateau Sopot",22.0048024,41.436124,"Kavadarci"));
+            wineries.add(new Winery("Chateau Sopot",41.777774,21.774216,"Veles"));
+            wineries.add(new Winery("Popova Kula",41.4109967,22.2261756,"Demir Kapija"));
+            wineries.add(new Winery("Bovin Winery",41.4943704,22.0915153,"Negotino"));
             wineryRepository.saveAll(wineries);
         }
 

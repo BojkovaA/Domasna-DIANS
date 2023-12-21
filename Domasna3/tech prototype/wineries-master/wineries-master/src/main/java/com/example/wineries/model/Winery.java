@@ -43,8 +43,8 @@ public class Winery {
     }
     public Winery(String name,Double lat,Double lon,String city){
         this.name = name;
-        this.lon = lon;
         this.lat = lat;
+        this.lon = lon;
         this.city = city;
     }
 }

@@ -39,15 +39,15 @@ public class WineryServiceImpl implements WineryService {
     }
 
     @Override
-    public void saveWinery(Long id, String name, String lon, String lat, String city) {
+    public void saveWinery(Long id, String name, String lat, String lon, String city) {
         if(this.wineryRepository.findById(id).isPresent())
             try {
                 throw new WineryAlreadyExistsException(id);
             } catch (WineryAlreadyExistsException e) {
                 e.printStackTrace();
             }
-        this.wineryRepository.findAll().add(new Winery(name,Double.valueOf(lon),
-                Double.valueOf(lat),city));
+        this.wineryRepository.findAll().add(new Winery(name,Double.valueOf(lat),
+                Double.valueOf(lon),city));
     }
 
     @Override
