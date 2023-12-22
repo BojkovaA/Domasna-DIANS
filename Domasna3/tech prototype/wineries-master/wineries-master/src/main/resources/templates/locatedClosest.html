@@ -68,7 +68,7 @@
     var lng;
 
     for(let i = 0; i < list.length; i++) {
-      var distance = latlng.distanceTo(L.latLng(list[i]['lon'], list[i]['lat']));
+      var distance = latlng.distanceTo(L.latLng(list[i]['lat'], list[i]['lon']));
       console.log(distance);
       if(distance < min){
         min = distance;
@@ -77,7 +77,7 @@
       }
     }
 
-    return L.latLng(lng, lat);
+    return L.latLng(lat, lng);
   }
 
   function onLocationFound(e){

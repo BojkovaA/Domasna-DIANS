@@ -23,6 +23,9 @@ public class DataInsert {
 
         if (wineryRepository.count() == 0) {
             wineries.add(new Winery("Chateau Sopot",41.777774,21.774216,"Veles"));
+            wineries.add(new Winery("Tristo Winery",41.7888,21.7911,"Veles"));
+            wineries.add(new Winery("Kocev Family Wines",41.7097,21.7878,"Veles"));
+            wineries.add(new Winery("Izvorno Winery",41.6038,21.6928,"Veles"));
             wineries.add(new Winery("Popova Kula",41.4109967,22.2261756,"Demir Kapija"));
             wineries.add(new Winery("Bovin Winery",41.4943704,22.0915153,"Negotino"));
             wineryRepository.saveAll(wineries);

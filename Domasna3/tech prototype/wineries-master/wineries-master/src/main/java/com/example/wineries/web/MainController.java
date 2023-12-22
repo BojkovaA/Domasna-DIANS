@@ -71,6 +71,6 @@ public class   MainController {
     public String userLocation(Model model)
     {
         model.addAttribute("list",wineryService.listAllWineries());
-        return "locateClosest";
+        return "locatedClosest";
     }
 }
