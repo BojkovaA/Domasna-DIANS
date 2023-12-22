@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "vinarija")
+@Table(name = "wineries")
 public class Winery {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,37 +14,20 @@ public class Winery {
 
     String name;
 
-    String location;
-
-    String workingTime;
+    Double lat;
 
     Double lon;
 
-    Double lat;
-
-    String phoneNumber;
-
     String city;
 
-    String website;
-
-    public Winery(String name, String location, String workingTime, Double lon, Double lat, String phoneNumber, String city, String website) {
+    public Winery(String name, Double lat, Double lon, String city) {
         this.name = name;
-        this.location = location;
-        this.lon = lon;
         this.lat = lat;
-        this.phoneNumber = phoneNumber;
+        this.lon = lon;
         this.city = city;
-        this.website = website;
     }
 
     public Winery(){
 
-    }
-    public Winery(String name,Double lat,Double lon,String city){
-        this.name = name;
-        this.lat = lat;
-        this.lon = lon;
-        this.city = city;
     }
 }
