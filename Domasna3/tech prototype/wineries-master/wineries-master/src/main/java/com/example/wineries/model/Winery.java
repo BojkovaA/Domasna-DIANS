@@ -30,4 +30,12 @@ public class Winery {
     public Winery(){
 
     }
+
+    public Winery(Long id, String name, Double lat, Double lon, String city){
+        this.id = id;
+        this.name = name;
+        this.lat = lat;
+        this.lon= lon;
+        this.city=city;
+    }
 }
