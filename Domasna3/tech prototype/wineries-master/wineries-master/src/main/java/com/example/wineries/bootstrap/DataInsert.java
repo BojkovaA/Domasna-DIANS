@@ -31,8 +31,20 @@ public class DataInsert {
                 wineries.add(new Winery("Kocev Family Wines", 41.7097, 21.7878, "Veles"));
                 wineries.add(new Winery("Izvorno Winery", 41.6038, 21.6928, "Veles"));
                 wineries.add(new Winery("Popova Kula", 41.4109967, 22.2261756, "Demir Kapija"));
+                wineries.add(new Winery("Queen Maria", 41.4141902, 22.2229754, "Demir Kapija"));
+                wineries.add(new Winery("Pivka", 41.4919, 22.093, "Negotino"));
                 wineries.add(new Winery("Bovin Winery", 41.4943704, 22.0915153, "Negotino"));
+                wineries.add(new Winery("Domain Lepovo", 41.5180203, 22.0341129, "Negotino"));
+                wineries.add(new Winery("Skovin", 41.9956025, 21.431031, "Skopje"));
+                wineries.add(new Winery("Kamnik", 42.0078222, 21.4902127, "Skopje"));
+                wineries.add(new Winery("Vinarija Stobi", 41.581119 , 21.9375971, "Stobi"));
+                wineries.add(new Winery("Lazar Winery", 41.5465, 21.9725, "Stobi"));
+                wineries.add(new Winery("Zaharchev Winery and Distillery", 41.436124, 22.0048024, "Kavadarci"));
+
+
+
             }
+
             wineryRepository.saveAll(wineries);
 
             if(userRepository.count() == 0){
