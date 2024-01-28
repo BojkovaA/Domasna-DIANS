@@ -10,9 +10,6 @@
         <module name="wineries" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="wineries" target="16" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
